@@ -12,11 +12,11 @@ COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Mounts the application code to the image
-COPY . code
+COPY ./medpaysku code
 WORKDIR /code
 
 EXPOSE 8000
 
 # runs the production server
-ENTRYPOINT ["python", "medpaysku/manage.py"]
+ENTRYPOINT ["python", "manage.py"]
 CMD ["runserver", "0.0.0.0:8000"]
