@@ -1,0 +1,6 @@
+Django==4.0.3
+djangorestframework==3.13.1
+django-rest-swagger==2.2.0
+PyYAML==6.0
+pandas==1.4.1
+uritemplate==4.1.1
